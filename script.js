@@ -40,6 +40,7 @@ document.querySelector(".check").addEventListener("click", function () {
       }
     } else {
       displayMessage("🎉 Correct number!");
+      document.querySelector('.message').textContent = '🎉 Good Guess!';
       document.querySelector("body").style.backgroundColor = "#60b347";
       document.querySelector(".number").style.width = "30rem";
       if (score > highScore) {
