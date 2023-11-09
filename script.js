@@ -12,7 +12,7 @@ document.querySelector('.guess').value = 45;
 
 let secretNumber = Math.trunc(Math.random() * 100) + 1;
 //document.querySelector(".number").textContent = secretNumber;
-let score = 20;
+let score = 100;
 let highScore = 0;
 
 //document.querySelector('.highscore').textContent = highScore;
@@ -31,7 +31,7 @@ document.querySelector(".check").addEventListener("click", function () {
     if (guess !== secretNumber) {
       displayMessage(guess > secretNumber ? "📈 Too high!" : "Too low!");
       if (score > 1) {
-        score--;
+        score-=5;
         document.querySelector(".score").textContent = score;
       } else {
         score = 0;
@@ -56,9 +56,9 @@ document.querySelector(".again").addEventListener("click", function () {
   displayMessage("Start guessing...");
   document.querySelector("body").style.backgroundColor = "#000";
   document.querySelector(".number").style.width = "15rem";
-  score = 20;
+  score = 100;
   document.querySelector(".score").textContent = score;
-  secretNumber = Math.trunc(Math.random() * 20) + 1;
+  secretNumber = Math.trunc(Math.random() * 100) + 1;
   document.querySelector(".number").textContent = '?';
 });
 
