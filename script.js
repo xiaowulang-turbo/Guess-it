@@ -59,7 +59,7 @@ document.querySelector(".again").addEventListener("click", function () {
   score = 20;
   document.querySelector(".score").textContent = score;
   secretNumber = Math.trunc(Math.random() * 20) + 1;
-  //document.querySelector(".number").textContent = secretNumber;
+  //document.querySelector(".number").textContent = ?;
 });
 
 /*
