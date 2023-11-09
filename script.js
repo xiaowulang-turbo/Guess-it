@@ -40,7 +40,7 @@ document.querySelector(".check").addEventListener("click", function () {
       }
     } else {
       displayMessage("🎉 Correct number!");
-      document.querySelector('.message').textContent = '🎉 Good Guess!';
+      document.querySelector(".number").textContent = secretNumber;
       document.querySelector("body").style.backgroundColor = "#60b347";
       document.querySelector(".number").style.width = "30rem";
       if (score > highScore) {
@@ -59,7 +59,7 @@ document.querySelector(".again").addEventListener("click", function () {
   score = 20;
   document.querySelector(".score").textContent = score;
   secretNumber = Math.trunc(Math.random() * 20) + 1;
-  document.querySelector(".number").textContent = secretNumber;
+  //document.querySelector(".number").textContent = secretNumber;
 });
 
 /*
