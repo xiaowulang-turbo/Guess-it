@@ -23,8 +23,8 @@ const displayMessage = function (message) {
 
 document.querySelector(".check").addEventListener("click", function () {
   let guess = Number(document.querySelector(".guess").value);
-  console.log(secretNumber, typeof secretNumber);
-  console.log(guess, typeof guess);
+  //console.log(secretNumber, typeof secretNumber);
+  //console.log(guess, typeof guess);
   if (!guess) {
     displayMessage("⛔ No number!");
   } else {
